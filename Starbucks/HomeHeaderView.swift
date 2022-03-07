@@ -15,7 +15,6 @@ class HomeHeaderView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
-        backgroundColor = .systemCyan
         style()
         layout()
     }

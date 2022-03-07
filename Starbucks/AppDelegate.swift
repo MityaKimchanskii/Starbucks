@@ -64,9 +64,7 @@ class GiftViewController: StarBukcsViewController {
 
 class StoresViewController: StarBukcsViewController {
     override func viewDidLoad() {
-        view.backgroundColor = .systemMint
         title = "Stores"
-        
     }
     
     override func commonInit() {

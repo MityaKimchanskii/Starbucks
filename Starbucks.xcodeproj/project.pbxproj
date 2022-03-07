@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B8DD36F28B45E4000424928 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DD36E28B45E4000424928 /* TileView.swift */; };
+		3B8DD36F28B45E4000424928 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DD36E28B45E4000424928 /* PlaceholderViewController.swift */; };
 		3B8E555F28B155A5000752D6 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E555E28B155A5000752D6 /* HomeHeaderView.swift */; };
 		3B912C6728B0B1F500BDE78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B912C6628B0B1F500BDE78E /* AppDelegate.swift */; };
 		3B912C6B28B0B1F500BDE78E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B912C6A28B0B1F500BDE78E /* HomeViewController.swift */; };
 		3B912C7028B0B1F800BDE78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B912C6F28B0B1F800BDE78E /* Assets.xcassets */; };
 		3B912C7328B0B1F800BDE78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B912C7128B0B1F800BDE78E /* LaunchScreen.storyboard */; };
 		3B912C7C28B0C4F700BDE78E /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B912C7B28B0C4F700BDE78E /* Factories.swift */; };
+		3BC4D8ED28B48D050088F33D /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8EC28B48D050088F33D /* TileViewController.swift */; };
+		3BC4D8EF28B48D420088F33D /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8EE28B48D420088F33D /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B8DD36E28B45E4000424928 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		3B8DD36E28B45E4000424928 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
 		3B8E555E28B155A5000752D6 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		3B912C6328B0B1F500BDE78E /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B912C6628B0B1F500BDE78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		3B912C7228B0B1F800BDE78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B912C7428B0B1F800BDE78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B912C7B28B0C4F700BDE78E /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		3BC4D8EC28B48D050088F33D /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		3BC4D8EE28B48D420088F33D /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +48,9 @@
 			children = (
 				3B912C6A28B0B1F500BDE78E /* HomeViewController.swift */,
 				3B8E555E28B155A5000752D6 /* HomeHeaderView.swift */,
-				3B8DD36E28B45E4000424928 /* TileView.swift */,
+				3B8DD36E28B45E4000424928 /* PlaceholderViewController.swift */,
+				3BC4D8EC28B48D050088F33D /* TileViewController.swift */,
+				3BC4D8EE28B48D420088F33D /* TileView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -157,9 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8E555F28B155A5000752D6 /* HomeHeaderView.swift in Sources */,
+				3BC4D8EF28B48D420088F33D /* TileView.swift in Sources */,
 				3B912C7C28B0C4F700BDE78E /* Factories.swift in Sources */,
+				3BC4D8ED28B48D050088F33D /* TileViewController.swift in Sources */,
 				3B912C6B28B0B1F500BDE78E /* HomeViewController.swift in Sources */,
-				3B8DD36F28B45E4000424928 /* TileView.swift in Sources */,
+				3B8DD36F28B45E4000424928 /* PlaceholderViewController.swift in Sources */,
 				3B912C6728B0B1F500BDE78E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
