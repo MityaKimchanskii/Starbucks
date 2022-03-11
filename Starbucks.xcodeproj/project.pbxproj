@@ -16,6 +16,9 @@
 		3B912C7C28B0C4F700BDE78E /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B912C7B28B0C4F700BDE78E /* Factories.swift */; };
 		3BC4D8ED28B48D050088F33D /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8EC28B48D050088F33D /* TileViewController.swift */; };
 		3BC4D8EF28B48D420088F33D /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8EE28B48D420088F33D /* TileView.swift */; };
+		3BC4D8F228B49D970088F33D /* RewardsTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8F128B49D970088F33D /* RewardsTileViewController.swift */; };
+		3BC4D8F428B49DA60088F33D /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8F328B49DA60088F33D /* RewardTileView.swift */; };
+		3BC4D8F628B4A0040088F33D /* BallanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8F528B4A0040088F33D /* BallanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		3B912C7B28B0C4F700BDE78E /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 		3BC4D8EC28B48D050088F33D /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		3BC4D8EE28B48D420088F33D /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		3BC4D8F128B49D970088F33D /* RewardsTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileViewController.swift; sourceTree = "<group>"; };
+		3BC4D8F328B49DA60088F33D /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
+		3BC4D8F528B4A0040088F33D /* BallanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,7 @@
 		3B8E555D28B15564000752D6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3BC4D8F028B49D690088F33D /* Rewards */,
 				3B912C6A28B0B1F500BDE78E /* HomeViewController.swift */,
 				3B8E555E28B155A5000752D6 /* HomeHeaderView.swift */,
 				3B8DD36E28B45E4000424928 /* PlaceholderViewController.swift */,
@@ -90,6 +97,16 @@
 				3B912C7428B0B1F800BDE78E /* Info.plist */,
 			);
 			name = Files;
+			sourceTree = "<group>";
+		};
+		3BC4D8F028B49D690088F33D /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				3BC4D8F128B49D970088F33D /* RewardsTileViewController.swift */,
+				3BC4D8F328B49DA60088F33D /* RewardTileView.swift */,
+				3BC4D8F528B4A0040088F33D /* BallanceView.swift */,
+			);
+			name = Rewards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,12 +180,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8E555F28B155A5000752D6 /* HomeHeaderView.swift in Sources */,
+				3BC4D8F428B49DA60088F33D /* RewardTileView.swift in Sources */,
+				3BC4D8F628B4A0040088F33D /* BallanceView.swift in Sources */,
 				3BC4D8EF28B48D420088F33D /* TileView.swift in Sources */,
 				3B912C7C28B0C4F700BDE78E /* Factories.swift in Sources */,
 				3BC4D8ED28B48D050088F33D /* TileViewController.swift in Sources */,
 				3B912C6B28B0B1F500BDE78E /* HomeViewController.swift in Sources */,
 				3B8DD36F28B45E4000424928 /* PlaceholderViewController.swift in Sources */,
 				3B912C6728B0B1F500BDE78E /* AppDelegate.swift in Sources */,
+				3BC4D8F228B49D970088F33D /* RewardsTileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
