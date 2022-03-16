@@ -40,11 +40,7 @@ extension RewardTileView {
         
         makeRewardsButton()
         
-        detailsButton.translatesAutoresizingMaskIntoConstraints = false
-        detailsButton.titleLabel?.text = "Details"
-        detailsButton.backgroundColor = .systemBlue
-        
-        
+        detailsButton = makeClearButton(withText: "Details")
     }
     
     func makeRewardsButton() {
