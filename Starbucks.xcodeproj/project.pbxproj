@@ -14,10 +14,11 @@
 		3B912C7028B0B1F800BDE78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B912C6F28B0B1F800BDE78E /* Assets.xcassets */; };
 		3B912C7328B0B1F800BDE78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B912C7128B0B1F800BDE78E /* LaunchScreen.storyboard */; };
 		3B912C7C28B0C4F700BDE78E /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B912C7B28B0C4F700BDE78E /* Factories.swift */; };
+		3BBEEE0228B5526D00562993 /* RewardsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEEE0128B5526D00562993 /* RewardsGraphView.swift */; };
 		3BC4D8ED28B48D050088F33D /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8EC28B48D050088F33D /* TileViewController.swift */; };
 		3BC4D8EF28B48D420088F33D /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8EE28B48D420088F33D /* TileView.swift */; };
 		3BC4D8F228B49D970088F33D /* RewardsTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8F128B49D970088F33D /* RewardsTileViewController.swift */; };
-		3BC4D8F428B49DA60088F33D /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8F328B49DA60088F33D /* RewardTileView.swift */; };
+		3BC4D8F428B49DA60088F33D /* RewardsTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8F328B49DA60088F33D /* RewardsTileView.swift */; };
 		3BC4D8F628B4A0040088F33D /* BallanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4D8F528B4A0040088F33D /* BallanceView.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +32,11 @@
 		3B912C7228B0B1F800BDE78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B912C7428B0B1F800BDE78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B912C7B28B0C4F700BDE78E /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
+		3BBEEE0128B5526D00562993 /* RewardsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsGraphView.swift; sourceTree = "<group>"; };
 		3BC4D8EC28B48D050088F33D /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		3BC4D8EE28B48D420088F33D /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		3BC4D8F128B49D970088F33D /* RewardsTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileViewController.swift; sourceTree = "<group>"; };
-		3BC4D8F328B49DA60088F33D /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
+		3BC4D8F328B49DA60088F33D /* RewardsTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsTileView.swift; sourceTree = "<group>"; };
 		3BC4D8F528B4A0040088F33D /* BallanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,8 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				3BC4D8F128B49D970088F33D /* RewardsTileViewController.swift */,
-				3BC4D8F328B49DA60088F33D /* RewardTileView.swift */,
+				3BC4D8F328B49DA60088F33D /* RewardsTileView.swift */,
 				3BC4D8F528B4A0040088F33D /* BallanceView.swift */,
+				3BBEEE0128B5526D00562993 /* RewardsGraphView.swift */,
 			);
 			name = Rewards;
 			sourceTree = "<group>";
@@ -179,8 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BBEEE0228B5526D00562993 /* RewardsGraphView.swift in Sources */,
 				3B8E555F28B155A5000752D6 /* HomeHeaderView.swift in Sources */,
-				3BC4D8F428B49DA60088F33D /* RewardTileView.swift in Sources */,
+				3BC4D8F428B49DA60088F33D /* RewardsTileView.swift in Sources */,
 				3BC4D8F628B4A0040088F33D /* BallanceView.swift in Sources */,
 				3BC4D8EF28B48D420088F33D /* TileView.swift in Sources */,
 				3B912C7C28B0C4F700BDE78E /* Factories.swift in Sources */,
