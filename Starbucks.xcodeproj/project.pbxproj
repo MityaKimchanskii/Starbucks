@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B8E555F28B155A5000752D6 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E555E28B155A5000752D6 /* HomeHeaderView.swift */; };
+		3B8E556128B16575000752D6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E556028B16575000752D6 /* HomeTableViewCell.swift */; };
 		3B912C6728B0B1F500BDE78E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B912C6628B0B1F500BDE78E /* AppDelegate.swift */; };
 		3B912C6B28B0B1F500BDE78E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B912C6A28B0B1F500BDE78E /* HomeViewController.swift */; };
 		3B912C7028B0B1F800BDE78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B912C6F28B0B1F800BDE78E /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B8E555E28B155A5000752D6 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		3B8E556028B16575000752D6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3B912C6328B0B1F500BDE78E /* Starbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B912C6628B0B1F500BDE78E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B912C6A28B0B1F500BDE78E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B8E555D28B15564000752D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B912C6A28B0B1F500BDE78E /* HomeViewController.swift */,
+				3B8E555E28B155A5000752D6 /* HomeHeaderView.swift */,
+				3B8E556028B16575000752D6 /* HomeTableViewCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		3B912C5A28B0B1F500BDE78E = {
 			isa = PBXGroup;
 			children = (
@@ -55,9 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				3B912C7A28B0B21700BDE78E /* Files */,
-				3B912C6A28B0B1F500BDE78E /* HomeViewController.swift */,
 				3B912C6628B0B1F500BDE78E /* AppDelegate.swift */,
 				3B912C7B28B0C4F700BDE78E /* Factories.swift */,
+				3B8E555D28B15564000752D6 /* Home */,
 			);
 			path = Starbucks;
 			sourceTree = "<group>";
@@ -142,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8E555F28B155A5000752D6 /* HomeHeaderView.swift in Sources */,
+				3B8E556128B16575000752D6 /* HomeTableViewCell.swift in Sources */,
 				3B912C7C28B0C4F700BDE78E /* Factories.swift in Sources */,
 				3B912C6B28B0B1F500BDE78E /* HomeViewController.swift in Sources */,
 				3B912C6728B0B1F500BDE78E /* AppDelegate.swift in Sources */,
