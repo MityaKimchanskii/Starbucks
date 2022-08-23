@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: StarBukcsViewController {
     
+    let topSpaceView = UIView()
     let headerView = HomeHeaderView()
     let scrollView = UIScrollView()
     let stackView = UIStackView()
@@ -46,8 +47,11 @@ class HomeViewController: StarBukcsViewController {
 
 extension HomeViewController {
     private func style() {
+        view.backgroundColor = .backgroundWhite
+        topSpaceView.backgroundColor = .white
+        
+        topSpaceView.translatesAutoresizingMaskIntoConstraints = false
         headerView.translatesAutoresizingMaskIntoConstraints = false
-       
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -56,6 +60,7 @@ extension HomeViewController {
     }
     
     private func layout() {
+        view.addSubview(topSpaceView)
         view.addSubview(headerView)
         view.addSubview(scrollView)
         scrollView.addSubview(stackView)
@@ -69,6 +74,12 @@ extension HomeViewController {
         headerViewTopConstraint = headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
         
         NSLayoutConstraint.activate([
+            // topSpacerView
+            topSpaceView.topAnchor.constraint(equalTo: view.topAnchor),
+            topSpaceView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            topSpaceView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            topSpaceView.heightAnchor.constraint(equalToConstant: 100),
+            
             // headerView
             headerViewTopConstraint!,
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

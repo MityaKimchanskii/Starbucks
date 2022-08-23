@@ -13,8 +13,10 @@ class RewardsTileView: UIView {
     let balanceView = BallanceView()
     var rewardsButton = UIButton()
     let rewardsGraphView = RewardsGraphView()
-    let starRewardsView = UIView()
+    let starRewardsView = StarRewardsView()
     var detailsButton = UIButton()
+    
+    var heightConstraint: NSLayoutConstraint?
     
     override init(frame: CGRect) {
         super.init(frame: .zero)
@@ -45,7 +47,8 @@ extension RewardsTileView {
     
     func makeRewardsButton() {
         rewardsButton.translatesAutoresizingMaskIntoConstraints = false
-//        rewardsButton.addTarget(self, action: #selector(rewardButtonTapped), for: .primaryActionTriggered)
+        
+        rewardsButton.addTarget(self, action: #selector(rewardButtonTapped), for: .primaryActionTriggered)
         
         let configuration = UIImage.SymbolConfiguration(scale: .small)
         let image = UIImage(systemName: "chevron.down", withConfiguration: configuration)
@@ -70,6 +73,8 @@ extension RewardsTileView {
         addSubview(starRewardsView)
         addSubview(detailsButton)
         
+        heightConstraint = starRewardsView.heightAnchor.constraint(equalToConstant: 0)
+        
         NSLayoutConstraint.activate([
             // balanceView
             balanceView.topAnchor.constraint(equalTo: topAnchor),
@@ -88,6 +93,7 @@ extension RewardsTileView {
             starRewardsView.topAnchor.constraint(equalTo: rewardsGraphView.bottomAnchor, constant: 8),
             starRewardsView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
             trailingAnchor.constraint(equalToSystemSpacingAfter: starRewardsView.trailingAnchor, multiplier: 1),
+            heightConstraint!,
             
             // detailsButton
             detailsButton.topAnchor.constraint(equalToSystemSpacingBelow: starRewardsView.bottomAnchor, multiplier: 2),
@@ -95,6 +101,8 @@ extension RewardsTileView {
             bottomAnchor.constraint(equalToSystemSpacingBelow: detailsButton.bottomAnchor, multiplier: 2)
 
         ])
+        
+        starRewardsView.isHidden = true
     }
     
     // Redraw our graph once we know actual device width & height
@@ -103,5 +111,54 @@ extension RewardsTileView {
         
         rewardsGraphView.actualFrameWidth = frame.width
         rewardsGraphView.drawRewardsGraph()
+    }
+}
+
+// MARK: - Actions
+extension RewardsTileView {
+    @objc func rewardButtonTapped() {
+        
+        if heightConstraint?.constant == 0 {
+            self.setChevronUp()
+            
+            let heightAnimation = UIViewPropertyAnimator(duration: 0.75, curve: .easeInOut) {
+                self.heightConstraint?.constant = 270
+                self.layoutIfNeeded()
+            }
+            heightAnimation.startAnimation()
+            
+            let alphaAnimation = UIViewPropertyAnimator(duration: 0.55, curve: .easeInOut) {
+                self.starRewardsView.isHidden = false
+                self.starRewardsView.alpha = 1
+            }
+            alphaAnimation.startAnimation(afterDelay: 0.5)
+            
+        } else {
+            self.setChevronDown()
+            
+            let animation = UIViewPropertyAnimator(duration: 0.75, curve: .easeInOut) {
+                self.heightConstraint?.constant = 0
+                self.starRewardsView.isHidden = true
+                self.starRewardsView.alpha = 0
+                self.layoutIfNeeded()
+            }
+            animation.startAnimation()
+        }
+    }
+    
+    @objc func detaisButtonTapped() {
+        print("Details tapped!")
+    }
+    
+    private func setChevronUp() {
+        let configuration = UIImage.SymbolConfiguration(scale: .small)
+        let image = UIImage(systemName: "chevron.up", withConfiguration: configuration)
+        rewardsButton.setImage(image, for: .normal)
+    }
+    
+    private func setChevronDown() {
+        let configuration = UIImage.SymbolConfiguration(scale: .small)
+        let image = UIImage(systemName: "chevron.down", withConfiguration: configuration)
+        rewardsButton.setImage(image, for: .normal)
     }
 }
