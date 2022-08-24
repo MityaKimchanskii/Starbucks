@@ -28,10 +28,6 @@ class RewardsTileView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override var intrinsicContentSize: CGSize {
-        return CGSize(width: 100, height: 300)
-    }
 }
 
 extension RewardsTileView {
